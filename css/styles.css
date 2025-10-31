@@ -38,10 +38,6 @@
   }
 }
 
-body {
-  background: linear-gradient(135deg, #1b1b1b, #131313);
-}
-
 #bio-container,
 #about-container {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
