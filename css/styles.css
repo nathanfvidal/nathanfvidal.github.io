@@ -17,8 +17,34 @@
 }
 
 /* General */
+
 .highlight {
   color: var(--main-color);
+}
+
+#bio-container,
+#about-container {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #1b1b1b, #131313);
+}
+
+#bio-container,
+#about-container {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Containers */
@@ -57,7 +83,9 @@
   height: 175px;
   border-radius: 50%;
   margin-bottom: 25px;
-  border: 3px solid var(--main-color);
+  box-shadow: 0 0 15px var(--main-color);
+  transition: 0.4s ease;
+  transform: scale(1.05);
 }
 
 #bio-container #welcome-text {
@@ -138,12 +166,12 @@
   border: 2px solid var(--main-color);
   border-radius: 5px;
   text-decoration: none;
-  transition: 0.5s;
   margin: 25px 0;
   padding: 12px 10px;
   width: 150px;
   text-align: center;
   display: flex;
+  transition: 0.3s ease;
 }
 
 #btn-projects ion-icon,
@@ -159,6 +187,7 @@
 
 #btn-projects:hover {
   background-color: transparent;
+  transform: scale(1.05);
 }
 
 #skills-section-title {
