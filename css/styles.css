@@ -11,8 +11,8 @@
   --main-color: #6decb1;
   --main-text-color: #fff;
   --border-color: #999;
-  --bio-bg-color: #313131;
-  --bio-border-color: #4d4d4d;
+  --bio-bg-color: #2b2b2b;
+  --bio-border-color: #303030;
   --about-bg-color: #1f1f1f;
 }
 
@@ -40,8 +40,8 @@
 }
 
 #bio-container img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 #bio-container h2 {
@@ -114,7 +114,7 @@
 }
 
 #name {
-  font-size: 42px;
+  font-size: 31px;
   margin-bottom: 15px;
 }
 
@@ -198,6 +198,10 @@
     flex-direction: column;
   }
 
+  #bio-container h2 {
+    display: none;
+  }
+
   #bio-container {
     min-height: auto;
     border-right: none;
@@ -209,6 +213,11 @@
     margin: 20px auto;
   }
 
+  #bio-container img {
+    width: 200px;
+    height: 200px;
+    margin: auto 20px;
+  }
   #about-container {
     text-align: center;
     padding: 30px;
